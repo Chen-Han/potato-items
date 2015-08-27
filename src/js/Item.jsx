@@ -23,12 +23,12 @@ if (!Object.assign) Object.assign = React.__spread;
 
 export default class Item extends React.Component{
     render(){
-        var {links,imgUrl,title,size} = this.props;
-        function getClassName(size){
+        var {links,imgUrl,title,size,className,...otherProps} = this.props;
+        function getClassName(size,className){
             return "potato-item " + (size?"item-"+size: ""); 
         }
         return (
-            <article className={getClassName(size)}>
+            <article className={getClassName(size,className)}, {...otherProps}>
                 <img src={imgUrl} className="img img-full">
                 <aside className="detail text-center">
                     <h4 className="title">

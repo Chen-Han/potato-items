@@ -1,0 +1,40 @@
+.potato-card{
+  @bg:#f3f3f3;
+  @iconColor: #1ca439;
+  @txtColor:black;
+  display:inline-block;
+  padding:12px 20px;
+  text-align:left;
+  position:relative;
+  font-size:14px;
+  background-color:@bg;
+  .name{
+    display:block;
+  }
+  .info-list{
+    list-style:none;
+    padding-left:10px;
+    .info-item{
+      i{
+        color:@iconColor;
+      }
+      a{
+        margin-left:5px;
+        color:@txtColor;
+      }
+    }
+  }
+  .more{
+    position:absolute;
+    right:10px;
+    bottom:3px;
+    font-size:22px;
+    cursor:hand;
+  }
+}
+
+.potato-card.material{
+  -webkit-box-shadow:  1px 1px 5px black;
+  -moz-box-shadow:  1px 1px 5px black;
+  box-shadow:  1px 1px 5px black;
+}
