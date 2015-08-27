@@ -1,59 +1,80 @@
 @item-sm: 120px;
 @item-md: 240px;
-@item-lg:300px;
-
-.potato-item{
-	@detailBg:black;
-	@detailTxt:white;
-	@detailFontSize:26px;
-	width:@item-sm;
-	height:@item-sm;
-	position: relative;
-	overflow: hidden;
-	display:inline-block;
-	margin-right: 30px;
-	&:nth-child{
-		margin-right: 0;
-	}
-	.detail{
-		transition:all linear 0.2s;
-		width:100%;
-		height:100%;
-		top:100%;
-		left:0;
-		position:absolute;
-		background-color:@detailBg;
-		opacity: 0.6;	
-		.title{
-			font-size:@detailFontSize;
-			color:@detailTxt;
-		}
-		.links i{
-			font-size:@detailFontSize;
-			display: inline-block;
-			color:@detailTxt;
-			margin-right:10px;
-			&:hover{
-				color:@primary;
-			}
-		}
-	}
-	&:hover{
-		.detail{
-			top:0;
-		}
-	}
+@item-lg: 300px;
+@font-sm:20px;
+@font-md:26px;
+@font-lg:32px;
+.potato-item {
+  @detailBg: black;
+  @detailTxt: white;
+  @detailFontSize: 1.5em;
+  width: @item-sm;
+  height: @item-sm;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 30px;
+  &:nth-child {
+    margin-right: 0;
+  }
+  .detail {
+    transition: all linear 0.2s;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    padding: 5%;
+    left: 0;
+    position: absolute;
+    background-color: @detailBg;
+    opacity: 0.6;
+    .title {
+      font-size: @detailFontSize;
+      color: @detailTxt;
+    }
+    .links {
+      display: block;
+      font-size: @detailFontSize;
+      margin-top: 20%;
+      a {
+        display: inline-block;
+        margin-right: 10px;
+        i {
+          color: @detailTxt;
+          &:hover {
+            color: darken(@detailTxt, 20%);
+          }
+        }
+      }
+    }
+  }
+  &:hover {
+    .detail {
+      top: 0;
+    }
+  }
 }
 
-.potato-item.item-sm{
-	width:@item-sm;
-	height:@item-sm;
+.potato-item.item-sm {
+  width: @item-sm;
+  height: @item-sm;
+  font-size:@font-sm;
 }
 
+.potato-item.item-md {
+  width: @item-md;
+  height: @item-md;
+  font-size:@font-md;
+}
 
-.img{
-	&.img-full{
-		width:100%;
-		height:100%;
-	}
+.potato-item.item-lg {
+  width: @item-lg;
+  height: @item-lg;
+  font-size:@font-lg;
+}
+
+.img {
+  &.img-full {
+    width: 100%;
+    height: 100%;
+  }
 }
