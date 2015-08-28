@@ -1,15 +1,15 @@
-@item-sm: 120px;
-@item-md: 240px;
-@item-lg: 300px;
+@article-sm: 120px;
+@article-md: 240px;
+@article-lg: 300px;
 @font-sm:20px;
 @font-md:26px;
 @font-lg:32px;
-.potato-item {
+.potato-article {
   @detailBg: black;
   @detailTxt: white;
   @detailFontSize: 1.5em;
-  width: @item-sm;
-  height: @item-sm;
+  width: @article-sm;
+  height: @article-sm;
   position: relative;
   overflow: hidden;
   display: inline-block;
@@ -37,7 +37,7 @@
       margin-top: 20%;
       a {
         display: inline-block;
-        margin-right: 10px;
+        padding:0 5px;
         i {
           color: @detailTxt;
           &:hover {
@@ -54,21 +54,21 @@
   }
 }
 
-.potato-item.item-sm {
-  width: @item-sm;
-  height: @item-sm;
+.potato-article.article-sm {
+  width: @article-sm;
+  height: @article-sm;
   font-size:@font-sm;
 }
 
-.potato-item.item-md {
-  width: @item-md;
-  height: @item-md;
+.potato-article.article-md {
+  width: @article-md;
+  height: @article-md;
   font-size:@font-md;
 }
 
-.potato-item.item-lg {
-  width: @item-lg;
-  height: @item-lg;
+.potato-article.article-lg {
+  width: @article-lg;
+  height: @article-lg;
   font-size:@font-lg;
 }
 

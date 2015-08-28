@@ -1,4 +1,4 @@
-import (default as React) from "react";
+import React from "react";
 // polyfill
 if (!Object.assign) Object.assign = React.__spread;
 

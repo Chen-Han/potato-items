@@ -1,0 +1,109 @@
+.potato-card {
+  display: inline-block;
+  padding: 12px 20px;
+  text-align: left;
+  position: relative;
+  font-size: 14px;
+  background-color: #f3f3f3;
+}
+.potato-card .name {
+  display: block;
+}
+.potato-card .info-list {
+  list-style: none;
+  padding-left: 10px;
+}
+.potato-card .info-list .info-item i {
+  color: #1ca439;
+}
+.potato-card .info-list .info-item a {
+  margin-left: 5px;
+  color: black;
+}
+.potato-card .more {
+  position: absolute;
+  right: 10px;
+  bottom: 3px;
+  font-size: 22px;
+  cursor: hand;
+}
+.potato-card.material {
+  -webkit-box-shadow: 1px 1px 5px black;
+  -moz-box-shadow: 1px 1px 5px black;
+  box-shadow: 1px 1px 5px black;
+}
+.potato-card.full {
+  width: 100%;
+}
+.potato-card.long {
+  min-width: 450px;
+}
+.potato-article {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 30px;
+}
+.potato-article:nth-child {
+  margin-right: 0;
+}
+.potato-article .detail {
+  transition: all linear 0.2s;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  padding: 5%;
+  left: 0;
+  position: absolute;
+  background-color: black;
+  opacity: 0.6;
+}
+.potato-article .detail .title {
+  font-size: 1.5em;
+  color: white;
+}
+.potato-article .detail .links {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 20%;
+}
+.potato-article .detail .links a {
+  display: inline-block;
+  padding: 0 5px;
+}
+.potato-article .detail .links a i {
+  color: white;
+}
+.potato-article .detail .links a i:hover {
+  color: #cccccc;
+}
+.potato-article:hover .detail {
+  top: 0;
+}
+.potato-article.article-sm {
+  width: 120px;
+  height: 120px;
+  font-size: 20px;
+}
+.potato-article.article-md {
+  width: 240px;
+  height: 240px;
+  font-size: 26px;
+}
+.potato-article.article-lg {
+  width: 300px;
+  height: 300px;
+  font-size: 32px;
+}
+.img.img-full {
+  width: 100%;
+  height: 100%;
+}
+.pt-card-list > .pt-card-item {
+  padding-bottom: 20px;
+}
+.pt-card-list > .pt-card-item:last-child {
+  padding-bottom: 0;
+}

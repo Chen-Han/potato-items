@@ -1,0 +1,6 @@
+.pt-card-list > .pt-card-item {
+  padding-bottom: 20px;
+}
+.pt-card-list > .pt-card-item:last-child {
+  padding-bottom: 0;
+}
